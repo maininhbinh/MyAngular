@@ -1,0 +1,25 @@
+<form [formGroup]="formSignup" (ngSubmit)="onHandleSubmit()">
+    <div class="mb-3">
+        <label for="name" >name</label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+    <div class="mb-3">
+        <label for="email">email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+        <div class="error"  *ngIf="formSignup.get('email')?.hasError('required') && (formSignup.get('email')?.touched || formSignup.get('email')?.dirty)">
+            Email required
+        </div>
+        <div class="error" *ngIf="formSignup.get('email')?.hasError('email') && (formSignup.get('email')?.touched || formSignup.get('email')?.dirty)">
+            không đúng định dạng email
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="password">password</label>
+        <input type="password" class="form-control" id="passwrod" formControlName="password">
+    </div>
+    <div class="mb-3">
+        <label for="confirmPassword">confirmPassword</label>
+        <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword">
+    </div>
+    <button type="submit" class="btn btn-warning ">add</button>
+</form>

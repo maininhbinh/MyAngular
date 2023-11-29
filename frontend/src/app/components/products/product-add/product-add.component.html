@@ -1,0 +1,16 @@
+<h1>{{mode == 'create' ? 'thêm' : 'edit'}} sản phẩm</h1>
+<form (ngSubmit)="onhandleSubmit()" [formGroup]="productForm" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="productName" class="form-label">tên sản phẩm</label>
+    <input type="text" class="form-control" id="productName" formControlName="name" value="">
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">giá sản phẩm</label>
+    <input type="number" class="form-control" id="price" formControlName="price">
+  </div>
+  <div class="mb-3">
+    <label for="image" class="form-label">ảnh sản phẩm (link)</label>
+    <input type="file" class="form-control" id="image" [(ngModel)]="fileName" (change)="onFileSelected($event)" multiple>
+  </div>
+  <button type="submit" class="btn btn-primary">{{mode == 'create' ? "add" : "edit"}}</button>
+</form>

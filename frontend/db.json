@@ -1,0 +1,34 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "điện thoại",
+      "price": 10000,
+      "imageUrl": "https://images.pexels.com/photos/2754200/pexels-photo-2754200.jpeg?cs=srgb&dl=pexels-todd-trapani-2754200.jpg&fm=jpg"
+    },
+    {
+      "id": 2,
+      "name": "tivi",
+      "price": 30000,
+      "imageUrl": "https://images.pexels.com/photos/2754200/pexels-photo-2754200.jpeg?cs=srgb&dl=pexels-todd-trapani-2754200.jpg&fm=jpg"
+    },
+    {
+      "name": "máy tính xách tay",
+      "price": 1000000,
+      "imageUrl": "https://cdn.tgdd.vn/Files/2019/01/09/1143571/zenbooks13_main_1546848488737_800x450.png",
+      "id": 3
+    },
+    {
+      "name": "dien thoai",
+      "price": 10000,
+      "imageUrl": "https://images.pexels.com/photos/2754200/pexels-photo-2754200.jpeg?cs=srgb&dl=pexels-todd-trapani-2754200.jpg&fm=jpg",
+      "id": 4
+    },
+    {
+      "name": "điện thoạii",
+      "price": 23423,
+      "imageUrl": "https://cdn.tgdd.vn/Files/2019/01/09/1143571/zenbooks13_main_1546848488737_800x450.png",
+      "id": 5
+    }
+  ]
+}
